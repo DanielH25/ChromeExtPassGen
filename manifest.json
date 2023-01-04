@@ -1,0 +1,11 @@
+{
+    "name": "Generate Password",
+    "version": "1.0.0",
+    "description": "Generates you a password",
+    "manifest_version": 3,
+    "author": "Daniel Hollerer",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Generate password"
+    }
+}
