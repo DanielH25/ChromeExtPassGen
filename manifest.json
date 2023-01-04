@@ -6,6 +6,7 @@
     "author": "Daniel Hollerer",
     "action": {
         "default_popup": "index.html",
-        "default_title": "Generate password"
+        "default_title": "Generate password",
+        "default_icon": "image.png"
     }
 }
