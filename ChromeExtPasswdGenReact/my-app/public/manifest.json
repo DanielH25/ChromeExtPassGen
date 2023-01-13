@@ -1,12 +1,12 @@
 {
-    "name": "Generate Password",
+    "name": "Generate Password React",
     "version": "1.0.0",
     "description": "Generates you a password",
     "manifest_version": 3,
     "author": "Daniel Hollerer",
     "action": {
         "default_popup": "index.html",
-        "default_title": "Generate password"
-        
+        "default_title": "Generate password erac",
+        "default_icon": "image.png"
     }
 }
