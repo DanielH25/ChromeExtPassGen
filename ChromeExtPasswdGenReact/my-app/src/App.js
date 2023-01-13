@@ -3,27 +3,19 @@ import './App.css';
 
 function App() {
 
-  function reload() {
+  function Reload() {
     var text = document.getElementById('textField');
     const result = makeid(13)
     text.value = "";
     text.value += result;
   };
 
-  //document.getElementById("reload").addEventListener('click', function () {
-  //  var text = document.getElementById('textField');
-  //  const result = makeid(13)
-  //  text.value = "";
-  //  text.value += result;
-  //});
-//
-  //document.querySelector("#copy").addEventListener("click", copy);
-//
-  //function copy() {
-  //    var copyText = document.querySelector("#textField");
-  //    copyText.select(); document.execCommand("copy");
-  //}
-//
+  function Copy() {
+    var copyText = document.getElementById("textField");
+    copyText.select();
+    
+    navigator.clipboard.writeText(copyText.value);
+  };
 
   function makeid(length) {
       var result = '';
@@ -38,11 +30,11 @@ function App() {
   return (
     <div className="App">
         <h3>Generate a password</h3>
-        <input type="text" value="" id="textField" readonly />
+        <input name="textField" type="text" value="" id="textField" readonly />
         <p>  </p>
-        <button onClick={reload} id="reload" value="reload">Reload</button>
+        <button onClick={Reload} id="reload" value="reload">Reload</button>
         <p>  </p>
-        <button id="copy">Copy</button>
+        <button onClick={Copy} id="copy">Copy</button>
         <br />
     </div>
   );
