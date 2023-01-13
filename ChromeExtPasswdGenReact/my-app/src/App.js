@@ -40,9 +40,9 @@ function App() {
         <h3>Generate a password</h3>
         <input type="text" value="" id="textField" readonly />
         <p>  </p>
-        <button onClick={reload} id="reload" value="reload" />
+        <button onClick={reload} id="reload" value="reload">Reload</button>
         <p>  </p>
-        <button onClick={copy} id="copy">Copy</button>
+        <button id="copy">Copy</button>
         <br />
     </div>
   );
